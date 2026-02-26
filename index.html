@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Quintessential&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Conversor de Moedas</title>
+
+</head>
+PROJETO DE CONVERSÃO DE MOEDAS DO DEVCLUB - ALUNO CARLOS JÚNIOR
+
+<body>
+    <main> <!-- a tag main serve para: definir o conteudo principal e central de um documento ou aplicação-->
+        <label>
+            <!-- a tag label serve para: definir um rótulo para um elemento de formulário, como um campo de entrada ou um botão-->
+            Converter <b>DE:</b>
+            <select class="moeda-a-converter" id="moedaDe">
+                <!-- a tag select serve para: criar um menu suspenso que permite ao usuário escolher uma opção entre várias disponíveis-->
+                <option value="Real" >Real Brasileiro (BRL)</option>
+                <option value="Dolar">Dólar Americano (USD)</option>
+                <option value="Euro">Euro (EUR)</option>
+                <option value="Libra">Libra Esterlina (GBP)</option>
+            </select>
+        </label>
+        
+        <label>
+            Converter <b>PARA:</b>
+            <select class="select-moeda-convertida"id="moedaPara">
+                <option value="Dolar">Dólar Americano (USD)</option>
+                <option value="Euro">Euro (EUR)</option>
+                <option value="Real" >Real Brasileiro (BRL)</option>
+                <option value="Libra">Libra Esterlina (GBP)</option>
+            </select>
+        </label>
+        <label>
+            Valor:
+            <input class="input-valor" type="number" id="valor" placeholder="Digite o valor" /> <!-- a tag input serve para: criar um campo de entrada onde os usuários podem inserir dados, como texto, números ou senhas onde as pricipais atributos sao: 
+                type="text": Campo de texto de linha única (padrão).
+                type="password": Oculta os caracteres digitados.
+                type="email"/number: Valida automaticamente se o formato está correto.
+                type="checkbox": Caixa de seleção múltipla.
+                type="radio": Seleção de apenas uma opção em um grupo.
+                type="submit": Cria um botão para enviar os dados do formulário.
+                type="file": Permite o envio de arquivos-->
+                <!-- o atributo placeholder serve para: fornecer uma dica ou exemplo de valor esperado em um campo de entrada, exibindo um texto temporário dentro do campo até que o usuário comece a digitar. -->
+        </label>
+        <button class="Button-converter">Converter</button>
+
+        <section> <!-- a tag section serve para: agrupar conteúdo relacionado em uma seção temática, ajudando a organizar o layout e a estrutura de um documento HTML-->
+            <div class="currency-box"><!-- a tag div serve para: criar um contêiner genérico para agrupar elementos e aplicar estilos ou scripts a eles, sem adicionar significado semântico ao conteúdo-->
+                <img src="./assets/brasil logo.png" alt="moeda-br" />
+                <p class="currency" id="moeda-de-cima">Real</p>
+                <p class="currency-value-to-convert">R$ 0,00</p>
+            </div>
+
+            <img src="./assets/seta.png" alt="seta" class="seta" />
+
+            <div class="currency-box">
+                <img class="moeda-logo" src="./assets/eua logo.png" alt="moeda-eua" />
+                <p class="currency" id="nome-moeda">Dólar Americano</p>
+                <p class="currency-value">$ 0.00</p>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script><!-- a tag script deve ficar no final do body, antes do fechamento da tag body-->
+    <!-- os principais motivos usar a tag script no final é:
+     * Evitar o bloqueio de renderização: O navegador lê o HTML de cima para baixo. Ao encontrar um script, ele pausa a construção da página para baixar e processar o JavaScript. Colocar no final garante que o usuário veja o conteúdo (texto/imagens) antes da execução dos scripts.
+     * Acesso aos elementos do DOM: Se o seu JavaScript interage com elementos da página (ex: manipulação de botões, formulários), o script precisa ser executado após o HTML desses elementos ter sido carregado.-->
+</body>
+
+</html>

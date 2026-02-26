@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "DM Serif Text", serif;
+    outline: none;
+}
+
+.planoDeFundo {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%; /* a propriedade width é usada para definir a largura de um elemento, enquanto a propriedade height é usada para definir a altura de um elemento. Ambas as propriedades podem ser definidas em pixels (px), porcentagem (%) ou usando palavras-chave como "auto" para ajustar automaticamente ao conteúdo. */
+    height: 100%;
+} /* nesse seção eu editei a imagem para plano de fundo */
+
+body {
+    background-image: url(./assets/plano-de-fundo-dinheiro.jpg);
+    background-size: cover;
+}
+
+main {
+    width: 375px;
+    background: #ddc86c;
+    border-radius: 20px; /* a propriedade border-radius é usada para arredondar os cantos de um elemento, criando bordas suaves e curvas. O valor pode ser definido em pixels (px), porcentagem (%) ou usando palavras-chave como "circle" para criar um círculo perfeito. Quanto maior o valor, mais arredondados serão os cantos. */
+    margin: 100px auto 40px;
+    padding: 44px 24px 23px;
+}
+
+label {
+    font-size: 14px;
+    color: #696767;
+    font-weight: 400;
+}
+
+select,input {
+    width: 100%;
+    height: 48px;
+    border: 1px solid #696767;
+    border-radius: 4px;
+    margin-bottom: 24px;
+    appearance: none;
+    padding-left: 18px;
+    font-size: 16px;
+    color: #504c4c;
+    font-weight: 550;
+}
+
+button {
+    width: 100%;
+    height: 48px;
+    border-radius: 5px;
+    background: #be8915;
+    color: #ffffff;
+    font-weight: 550;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+button:active {
+    opacity: 0.6;
+}
+
+section {
+    border: 1px solid #958899;
+    border-radius: 20px;
+    margin-top: 16px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.seta {
+    width: 35px;
+    height: 49.94px;
+    opacity: 1;
+    top: 526px;
+    left: 167px;
+    margin: 15px 0;
+}
+
+.currency-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+
+.currency{
+    color: #777777;
+    font-size: 14px;
+}
+    
+.currency-value, .currency-value-to-convert{
+    color: #555555;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+/* display-block: A propriedade display: block; é usada para definir um elemento como um bloco, o que significa que ele ocupará toda a largura disponível e começará em uma nova linha. Elementos de bloco geralmente têm margens verticais e podem conter outros elementos. Exemplos de elementos de bloco incluem <div>, <p>, <h1> a <h6>, entre outros.
+Alem disso em caso de uma imagem ao colocar o width e height como auto, o elemento ficara centralizado. */
+
+/* o display-flex: A propriedade display: flex; é usada para criar um layout flexível, permitindo que os elementos filhos sejam organizados em uma linha ou coluna. O Flexbox facilita o alinhamento, a distribuição e o dimensionamento dos elementos dentro de um contêiner. Com Flexbox, você pode controlar a direção dos itens (horizontal ou vertical), o alinhamento (alinhamento ao início, centro ou final) e a distribuição do espaço entre os itens. Exemplos de elementos com display: flex; incluem contêineres de navegação, galerias de imagens e layouts responsivos. */
