@@ -13,5 +13,6 @@
 <p>- JavaScript</p>
 <br>
 
-<img align="left" src="https://github.com/carlosjuniordev30/CRIACAO-READM-GIT-DEVCLUB/blob/master/CELULAR.png?raw=true" alt="celular"/>
-<img align="left" src="https://github.com/carlosjuniordev30/CRIACAO-READM-GIT-DEVCLUB/blob/master/PC.png?raw=true" style="width:55%"/>
+
+<img align="left" src="https://github.com/carlosjuniordev30/CONVERSOR-DE-MOEDAS-DEVCLUB/blob/75cc84b6aebad570a8ec6f0f0a857192d6fa5510/conversor%20de%20moedas.png alt="conversor-de-moedas"/>
+
